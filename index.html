@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScanVerse Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2937; --muted:#5b6472; --accent:#2563eb; --card:#fff; --bg:#f4f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+    main { max-width:860px; margin:0 auto; padding:32px 20px 56px; }
+    article { background:var(--card); border-radius:16px; padding:32px clamp(22px,5vw,56px); box-shadow:0 8px 30px #1f293714; }
+    h1 { margin-top:0; font-size:clamp(2rem,5vw,3rem); line-height:1.15; }
+    h2 { margin-top:2rem; font-size:1.35rem; }
+    .meta { color:var(--muted); }
+    a { color:var(--accent); }
+    footer { margin-top:24px; color:var(--muted); font-size:.9rem; text-align:center; }
+  </style>
+</head>
+<body>
+<main><article>
+  <h1>ScanVerse Privacy Policy</h1>
+  <p class="meta"><strong>Last updated:</strong> 7 October 2026</p>
+
+  <p>ScanVerse is developed by Star Cheetah Studio. This policy explains what the Android app accesses, how it processes documents, and where information is stored. ScanVerse currently has no developer-controlled account system or backend.</p>
+
+  <h2>Developer information</h2>
+  <p><strong>App:</strong> ScanVerse<br><strong>Developer:</strong> Star Cheetah Studio<br><strong>Privacy contact:</strong> A public contact address must be added before publication; the current project does not contain an official privacy email.</p>
+
+  <h2>Information the app accesses</h2>
+  <p>Depending on the feature you use, ScanVerse accesses camera input, documents and images selected through Android’s document picker, scanned page images, PDF files, OCR text, document titles, page order, tags, notes, bookmarks, and app settings. The app does not require an account and does not ask for your name, phone number, or address.</p>
+
+  <h2>Camera and document scanning</h2>
+  <p>Camera permission is used for scanning documents through the Android/ML Kit document scanner. Scan results are copied into ScanVerse’s private app storage and may be saved in the Library. You can also import PDFs and images through Android’s Storage Access Framework.</p>
+
+  <h2>Photos, images, and files</h2>
+  <p>Selected images and PDFs are read only to perform the requested operation, such as Images to PDF, PDF to Images, OCR, or PDF editing. ScanVerse does not request broad photo-library access; file selection is handled by Android’s picker.</p>
+
+  <h2>PDF and document processing</h2>
+  <p>PDF operations such as merge, split, extraction, rotation, deletion, compression, watermarking, password protection, metadata removal, and page rendering run locally on the device. Imported digital PDFs may have text extracted locally. Imported image-only PDFs are not rasterized for OCR by the current implementation.</p>
+
+  <h2>OCR processing</h2>
+  <p>English/Latin and Devanagari OCR, plus language identification, use Google ML Kit models on the device. Scanner page OCR is processed by a local background worker and stored locally with the related document. ScanVerse does not send document images or OCR text to a developer-controlled server. ML Kit or Google Play services may download or update on-device models according to their own service terms and device network settings.</p>
+
+  <h2>Translation</h2>
+  <p>The translation feature uses ML Kit’s on-device translation models. A language model may be downloaded before first use; translated text is processed locally by the app after the model is available.</p>
+
+  <h2>Local storage and database</h2>
+  <p>Library records, page images, generated PDFs, OCR text, tags, notes, bookmarks, recent history, and preferences are stored in app-private storage and a local Room database. App Lock settings are stored in Android DataStore. Temporary files are used during some operations and are cleaned up when the operation finishes or fails.</p>
+
+  <h2>App Lock and biometric authentication</h2>
+  <p>App Lock uses Android’s biometric/device-credential prompt. ScanVerse does not receive or store fingerprints, face data, PINs, patterns, or passwords. It stores only whether App Lock is enabled and the selected timeout. Authentication is handled by Android.</p>
+
+  <h2>Network and third-party services</h2>
+  <p>The project contains no developer analytics, advertising, crash-reporting, Firebase backend, account service, or custom upload API. It uses AndroidX, Room, WorkManager, Hilt, PDFBox, a PDF viewer, Coil, Android Biometric, and Google ML Kit libraries. ML Kit and Google Play services may manage their own model downloads; ScanVerse does not control or receive the contents of those service communications.</p>
+
+  <h2>Data sharing and exports</h2>
+  <p>ScanVerse does not sell or share documents or OCR text with Star Cheetah Studio. If you choose Save/Export, a copy may be written to the public Downloads/ScanVerse folder. If you choose Share, Android sends the selected file or text to the app you choose. Those receiving apps and public exported files are governed by their own policies.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>App-private documents and related data remain until you delete them in ScanVerse, clear the app’s data, or uninstall the app. Publicly exported files and files shared to another app are outside ScanVerse’s private storage and are not automatically removed when ScanVerse data is cleared or the app is uninstalled. You are responsible for deleting those copies from the destination.</p>
+
+  <h2>Security</h2>
+  <p>Files and database records are kept in app-private storage protected by Android’s application sandbox. App Lock adds an Android-managed authentication gate. No security method is perfect, so keep your device and Android security controls up to date.</p>
+
+  <h2>Children’s privacy</h2>
+  <p>ScanVerse is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+  <h2>Your rights</h2>
+  <p>You can review and delete Library documents in the app and can delete exported copies from their destination. Depending on your location, you may have additional rights under local privacy law. Since ScanVerse has no developer account system, there is no account deletion process.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy when the app’s data practices change. The “Last updated” date will identify the current version.</p>
+
+  <h2>Contact us</h2>
+  <p>Star Cheetah Studio must publish an official privacy contact email before this policy is published. Until then, this section is a release-blocking placeholder.</p>
+</article><footer>ScanVerse · Star Cheetah Studio</footer></main>
+</body>
+</html>
